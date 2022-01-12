@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">VeneTasa</string>
+    <string name="rate_value">Bs. %1$s</string>
+    <string name="converter">Convertidor</string>
+</resources>

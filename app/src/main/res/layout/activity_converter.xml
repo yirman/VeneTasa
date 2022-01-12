@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.ConverterActivity"
+    android:layout_margin="20dp"
+    android:gravity="center_horizontal"
+    android:weightSum="3">
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/rate_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"/>
+
+    <LinearLayout
+        android:id="@+id/currency_converter_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2">
+
+            <com.venezuela.venetasa.ui.custom.CurrencyEditor
+                android:id="@+id/dollars"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="36sp"
+                android:text="0.00"
+                android:maxLines="1"
+                android:inputType="textFilter"
+                android:importantForAutofill="no"
+                app:currency_type="usd"/>
+
+            <com.venezuela.venetasa.ui.custom.CurrencyEditor
+                android:id="@+id/bolivares"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="36sp"
+                android:text="0.00"
+                android:maxLines="1"
+                android:inputType="textFilter"
+                android:importantForAutofill="no"
+                app:currency_type="bss"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.venezuela.venetasa.ui.custom.Numpad
+        android:id="@+id/numpad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="4"
+        android:useDefaultMargins="true"
+        android:layout_weight="2"
+        android:padding="25dp"/>
+
+</LinearLayout>
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Numpad">
+        <attr name="upperCurrency" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="CurrencyEditor">
+
+        <attr name="currency_type" format="enum">
+            <enum name="bss" value="1" />
+            <enum name="usd" value="0" />
+        </attr>
+    </declare-styleable>
+</resources>
